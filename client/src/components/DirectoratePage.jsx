@@ -8,6 +8,7 @@ import DownloadsTable from './DownloadsTable.jsx';
 import CoursesTable from './CoursesTable.jsx';
 import AdmittedDetailsTable from './AdmittedDetailsTable.jsx';
 import FacultyTable from './FacultyTable.jsx';
+import GuestLecturesTable from './GuestLecturesTable.jsx';
 import GalleryDisplay from './GalleryDisplay.jsx';
 import directorates from '../content/directorates.json';
 import { useDirectorateMenu, useSlides } from '../api/public.js';
@@ -46,6 +47,9 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'students-committees') return <DownloadsTable section="students-committees" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.menuKey === 'faculty') return <FacultyTable />;
+  if (item.menuKey === 'syllabus') return <DownloadsTable section="syllabus" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'previous-papers') return <DownloadsTable section="previous-papers" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
+  if (item.menuKey === 'guest-lectures') return <GuestLecturesTable />;
   if (item.menuKey === 'gallery') return <GalleryDisplay />;
   if (item.menuKey === 'director-head' || item.menuKey === 'principal') {
     return (
