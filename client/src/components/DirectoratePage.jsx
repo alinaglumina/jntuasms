@@ -56,8 +56,9 @@ function DynamicTabContent({ item }) {
             <i className="fa-solid fa-user text-4xl" aria-hidden="true" />
           </div>
         )}
-        <p className="mt-4 font-display text-lg font-semibold text-navy">{item.label}</p>
-        {item.body && <div className="mt-4 max-w-xl text-left"><SafeHtml html={item.body} /></div>}
+        {item.body && <div className="mt-4 font-display text-xl font-bold text-navy"><SafeHtml html={item.body} /></div>}
+        <p className="mt-1 text-base font-semibold text-slate-700">{item.label}</p>
+        <p className="text-sm text-slate-500">School of Management Studies</p>
         {item.attachment1 && (
           <a href={item.attachment1} target="_blank" rel="noopener noreferrer"
              className="mt-4 inline-flex items-center gap-2 rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90">
