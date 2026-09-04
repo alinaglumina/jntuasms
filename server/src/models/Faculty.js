@@ -5,6 +5,7 @@ const schema = new mongoose.Schema({
   designation:    { type: String, default: '' },
   department:     { type: String, default: '', index: true },
   qualification:  { type: String, default: '' },
+  dateOfJoining:  { type: Date, default: null },
   specialization: { type: String, default: '' },
   experience:     { type: String, default: '' },
   email:          { type: String, default: '' },
