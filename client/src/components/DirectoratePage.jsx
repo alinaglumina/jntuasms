@@ -52,6 +52,9 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'guest-lectures') return <GuestLecturesTable />;
   if (item.menuKey === 'nirf') return <DownloadsTable section="nirf" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
   if (item.menuKey === 'iso') return <DownloadsTable section="iso" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
+  if (item.menuKey === 'alumni') return <DownloadsTable section="alumni" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
+  if (item.menuKey === 'students-club') return <DownloadsTable section="students-club" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
+  if (item.menuKey === 'student-activities') return <DownloadsTable section="student-activities" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
   if (item.menuKey === 'gallery') return <GalleryDisplay />;
   if (item.menuKey === 'director-head' || item.menuKey === 'principal') {
     return (
