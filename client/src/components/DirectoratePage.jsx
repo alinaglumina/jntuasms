@@ -44,7 +44,6 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'career-guidance-placement-cell') return <DownloadsTable section="career-guidance-placement-cell" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'grievance-redressal-cell') return <DownloadsTable section="grievance-redressal-cell" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'students-committees') return <DownloadsTable section="students-committees" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
-  if (item.menuKey === 'courses-offered') return <CoursesTable />;
   if (item.menuKey === 'admitted-details') return <AdmittedDetailsTable />;
   if (item.menuKey === 'faculty') return <FacultyTable />;
   if (item.menuKey === 'gallery') return <GalleryDisplay />;
