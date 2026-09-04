@@ -50,6 +50,8 @@ function DynamicTabContent({ item }) {
   if (item.menuKey === 'syllabus') return <DownloadsTable section="syllabus" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'previous-papers') return <DownloadsTable section="previous-papers" showDate={false} titleLabel="Title" attachmentLabel="Download" />;
   if (item.menuKey === 'guest-lectures') return <GuestLecturesTable />;
+  if (item.menuKey === 'nirf') return <DownloadsTable section="nirf" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
+  if (item.menuKey === 'iso') return <DownloadsTable section="iso" showDate={false} titleLabel="Title" attachmentLabel="Attachment" />;
   if (item.menuKey === 'gallery') return <GalleryDisplay />;
   if (item.menuKey === 'director-head' || item.menuKey === 'principal') {
     return (

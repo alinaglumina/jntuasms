@@ -209,6 +209,8 @@ export const RESOURCES = {
                { value: 'syllabus', label: 'Academics — Syllabus' },
                { value: 'guest-lectures', label: 'Academics — Guest Lectures' },
                { value: 'previous-papers', label: 'Academics — Previous Papers' },
+               { value: 'nirf', label: 'NIRF' },
+               { value: 'iso', label: 'ISO' },
              ] }),
              F('attachment', 'File', 'file'), F('sortOrder', 'Order', 'number'),
              F('isActive', 'Active', 'checkbox', { default: true })],
