@@ -50,7 +50,7 @@ function DynamicTabContent({ item }) {
     return (
       <div className="flex flex-col items-center text-center">
         {item.image ? (
-          <img src={item.image} alt={item.label} className="h-40 w-40 rounded-full object-cover shadow-card" />
+          <img src={item.image} alt={item.label} className="max-h-96 w-auto rounded-lg object-contain shadow-card" />
         ) : (
           <div className="grid h-40 w-40 place-items-center rounded-full bg-navy/5 text-navy shadow-card">
             <i className="fa-solid fa-user text-4xl" aria-hidden="true" />
